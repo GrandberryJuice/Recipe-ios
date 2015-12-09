@@ -13,6 +13,10 @@
 		C75AEFBF1C167EC3004DB9C7 /* Recipez.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C75AEFBD1C167EC3004DB9C7 /* Recipez.xcdatamodeld */; };
 		C75AEFC11C167EC3004DB9C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C75AEFC01C167EC3004DB9C7 /* Assets.xcassets */; };
 		C75AEFC41C167EC3004DB9C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C75AEFC21C167EC3004DB9C7 /* LaunchScreen.storyboard */; };
+		C75AEFD01C168BEE004DB9C7 /* Recipe+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75AEFCE1C168BEE004DB9C7 /* Recipe+CoreDataProperties.swift */; settings = {ASSET_TAGS = (); }; };
+		C75AEFD11C168BEE004DB9C7 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75AEFCF1C168BEE004DB9C7 /* Recipe.swift */; settings = {ASSET_TAGS = (); }; };
+		C75AEFD31C168D81004DB9C7 /* RecipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75AEFD21C168D81004DB9C7 /* RecipeCell.swift */; settings = {ASSET_TAGS = (); }; };
+		C75AEFD51C16962F004DB9C7 /* CreateRecipeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75AEFD41C16962F004DB9C7 /* CreateRecipeVC.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		C75AEFC01C167EC3004DB9C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C75AEFC31C167EC3004DB9C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C75AEFC51C167EC3004DB9C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C75AEFCE1C168BEE004DB9C7 /* Recipe+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Recipe+CoreDataProperties.swift"; path = "../Recipe+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		C75AEFCF1C168BEE004DB9C7 /* Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Recipe.swift; path = ../Recipe.swift; sourceTree = "<group>"; };
+		C75AEFD21C168D81004DB9C7 /* RecipeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeCell.swift; sourceTree = "<group>"; };
+		C75AEFD41C16962F004DB9C7 /* CreateRecipeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateRecipeVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,43 @@
 		C75AEFB51C167EC2004DB9C7 /* Recipez */ = {
 			isa = PBXGroup;
 			children = (
+				C75AEFCD1C168B99004DB9C7 /* Controller */,
+				C75AEFCC1C168B90004DB9C7 /* View */,
+				C75AEFCB1C168B86004DB9C7 /* Model */,
 				C75AEFB61C167EC2004DB9C7 /* AppDelegate.swift */,
-				C75AEFB81C167EC2004DB9C7 /* ViewController.swift */,
-				C75AEFBA1C167EC2004DB9C7 /* Main.storyboard */,
 				C75AEFC01C167EC3004DB9C7 /* Assets.xcassets */,
 				C75AEFC21C167EC3004DB9C7 /* LaunchScreen.storyboard */,
 				C75AEFC51C167EC3004DB9C7 /* Info.plist */,
 				C75AEFBD1C167EC3004DB9C7 /* Recipez.xcdatamodeld */,
 			);
 			path = Recipez;
+			sourceTree = "<group>";
+		};
+		C75AEFCB1C168B86004DB9C7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C75AEFCE1C168BEE004DB9C7 /* Recipe+CoreDataProperties.swift */,
+				C75AEFCF1C168BEE004DB9C7 /* Recipe.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		C75AEFCC1C168B90004DB9C7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C75AEFD21C168D81004DB9C7 /* RecipeCell.swift */,
+				C75AEFBA1C167EC2004DB9C7 /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		C75AEFCD1C168B99004DB9C7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C75AEFB81C167EC2004DB9C7 /* ViewController.swift */,
+				C75AEFD41C16962F004DB9C7 /* CreateRecipeVC.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +174,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C75AEFB91C167EC2004DB9C7 /* ViewController.swift in Sources */,
+				C75AEFD01C168BEE004DB9C7 /* Recipe+CoreDataProperties.swift in Sources */,
 				C75AEFB71C167EC2004DB9C7 /* AppDelegate.swift in Sources */,
+				C75AEFD31C168D81004DB9C7 /* RecipeCell.swift in Sources */,
+				C75AEFD51C16962F004DB9C7 /* CreateRecipeVC.swift in Sources */,
 				C75AEFBF1C167EC3004DB9C7 /* Recipez.xcdatamodeld in Sources */,
+				C75AEFD11C168BEE004DB9C7 /* Recipe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
