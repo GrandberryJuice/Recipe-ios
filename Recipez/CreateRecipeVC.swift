@@ -33,18 +33,18 @@ class CreateRecipeVC: UIViewController,UIImagePickerControllerDelegate, UINaviga
         view.addGestureRecognizer(tap)
 //        self.scrollview.contentSize.height = 600
 
-            scrollview.contentInset = UIEdgeInsetsMake(0, 0, 600, 0)
+            scrollview.contentInset = UIEdgeInsetsMake(0, 0, 400, 0)
     }
     
     override func viewWillLayoutSubviews() {
         self.scrollview.frame = self.view.bounds
-        self.scrollview.contentSize.height = 600
+        self.scrollview.contentSize.height = 400
         self.scrollview.contentSize.width = 0
         
     }
     
     func textFieldDidBeginEditing(textField: UITextField) {
-        scrollview.setContentOffset(CGPointMake(0, 250), animated: true)
+        //scrollview.setContentOffset(CGPointMake(0, 250), animated: true)
     }
 //
     func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage, editingInfo: [String : AnyObject]?) {

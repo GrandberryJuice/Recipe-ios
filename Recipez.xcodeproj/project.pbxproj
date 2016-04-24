@@ -322,9 +322,9 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Recipez/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.reipez.in.no.tyme;
+				PRODUCT_BUNDLE_IDENTIFIER = com.recipez.in.no.tyme;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "96d903ca-8fd8-4975-920c-560e2b6ff086";
+				PROVISIONING_PROFILE = "2d3beab5-a485-47fb-978b-3a35b5839d9d";
 			};
 			name = Debug;
 		};
@@ -332,12 +332,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: KENNETH GRANDBERRY (955G8PQ5VZ)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: KENNETH GRANDBERRY (JDJW8889MB)";
 				INFOPLIST_FILE = Recipez/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.reipez.in.no.tyme;
+				PRODUCT_BUNDLE_IDENTIFIER = com.recipez.in.no.tyme;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "96d903ca-8fd8-4975-920c-560e2b6ff086";
+				PROVISIONING_PROFILE = "2d3beab5-a485-47fb-978b-3a35b5839d9d";
 			};
 			name = Release;
 		};

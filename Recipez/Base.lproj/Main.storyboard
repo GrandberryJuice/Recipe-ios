@@ -97,45 +97,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CBV-IZ-d4M" customClass="CustomButton" customModule="Recipez" customModuleProvider="target">
-                                <rect key="frame" x="209" y="285" width="181" height="30"/>
-                                <color key="backgroundColor" red="0.21176470588235294" green="0.84313725490196079" blue="0.71764705882352942" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="0BP-AR-kk0"/>
-                                    <constraint firstAttribute="height" constant="30" id="Hsi-rr-yhM"/>
-                                    <constraint firstAttribute="width" constant="181" id="Vi2-Ay-niL"/>
-                                    <constraint firstAttribute="height" constant="30" id="Wtd-C2-mOh"/>
-                                    <constraint firstAttribute="width" constant="181" id="cXW-Ss-yDd"/>
-                                    <constraint firstAttribute="width" constant="181" id="d9Q-S0-Ke7"/>
-                                    <constraint firstAttribute="height" constant="30" id="obh-kX-e75"/>
-                                    <constraint firstAttribute="width" constant="181" id="qS9-Pm-49K"/>
-                                </constraints>
-                                <state key="normal" title="Create Recipe">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="3"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="0BP-AR-kk0"/>
-                                        <exclude reference="Wtd-C2-mOh"/>
-                                        <exclude reference="cXW-Ss-yDd"/>
-                                        <exclude reference="d9Q-S0-Ke7"/>
-                                        <exclude reference="obh-kX-e75"/>
-                                        <exclude reference="qS9-Pm-49K"/>
-                                    </mask>
-                                </variation>
-                                <connections>
-                                    <action selector="createRecipe:" destination="HWf-bm-jYZ" eventType="touchUpInside" id="K6Y-Kj-F5v"/>
-                                </connections>
-                            </button>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" delaysContentTouches="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dlu-1b-Ypa">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dlu-1b-Ypa">
                                 <rect key="frame" x="0.0" y="64" width="600" height="492"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tus-OC-HJK">
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tus-OC-HJK">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="492"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="food" translatesAutoresizingMaskIntoConstraints="NO" id="FvH-gX-dqz">
@@ -272,6 +237,41 @@
                                                     <outlet property="delegate" destination="HWf-bm-jYZ" id="3ff-lC-yzj"/>
                                                 </connections>
                                             </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CBV-IZ-d4M" customClass="CustomButton" customModule="Recipez" customModuleProvider="target">
+                                                <rect key="frame" x="210" y="337" width="181" height="30"/>
+                                                <color key="backgroundColor" red="0.21176470588235294" green="0.84313725490196079" blue="0.71764705882352942" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="0BP-AR-kk0"/>
+                                                    <constraint firstAttribute="height" constant="30" id="Hsi-rr-yhM"/>
+                                                    <constraint firstAttribute="width" constant="181" id="Vi2-Ay-niL"/>
+                                                    <constraint firstAttribute="height" constant="30" id="Wtd-C2-mOh"/>
+                                                    <constraint firstAttribute="width" constant="181" id="cXW-Ss-yDd"/>
+                                                    <constraint firstAttribute="width" constant="181" id="d9Q-S0-Ke7"/>
+                                                    <constraint firstAttribute="height" constant="30" id="obh-kX-e75"/>
+                                                    <constraint firstAttribute="width" constant="181" id="qS9-Pm-49K"/>
+                                                </constraints>
+                                                <state key="normal" title="Create Recipe">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="0BP-AR-kk0"/>
+                                                        <exclude reference="Wtd-C2-mOh"/>
+                                                        <exclude reference="cXW-Ss-yDd"/>
+                                                        <exclude reference="d9Q-S0-Ke7"/>
+                                                        <exclude reference="obh-kX-e75"/>
+                                                        <exclude reference="qS9-Pm-49K"/>
+                                                    </mask>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="createRecipe:" destination="HWf-bm-jYZ" eventType="touchUpInside" id="K6Y-Kj-F5v"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
@@ -279,6 +279,8 @@
                                             <constraint firstItem="Ziv-Ar-lI9" firstAttribute="top" secondItem="h8m-pw-DNt" secondAttribute="bottom" constant="36" id="FNk-V4-WU8"/>
                                             <constraint firstItem="kgk-1r-Wss" firstAttribute="leading" secondItem="Tus-OC-HJK" secondAttribute="leading" constant="8" id="GKT-mq-2BW"/>
                                             <constraint firstAttribute="trailing" secondItem="Ziv-Ar-lI9" secondAttribute="trailing" constant="28" id="H8N-tQ-gnR"/>
+                                            <constraint firstAttribute="height" constant="600" id="LhA-b5-UKY"/>
+                                            <constraint firstItem="CBV-IZ-d4M" firstAttribute="centerX" secondItem="Tus-OC-HJK" secondAttribute="centerX" id="MGf-ee-Z2M"/>
                                             <constraint firstItem="Ziv-Ar-lI9" firstAttribute="leading" secondItem="Tus-OC-HJK" secondAttribute="leading" constant="12" id="Q1f-6c-5uo"/>
                                             <constraint firstItem="FvH-gX-dqz" firstAttribute="top" secondItem="Tus-OC-HJK" secondAttribute="top" constant="8" id="R9D-le-geK"/>
                                             <constraint firstItem="2P2-hy-189" firstAttribute="leading" secondItem="kgk-1r-Wss" secondAttribute="trailing" constant="8" id="cDm-WO-Xnn"/>
@@ -288,6 +290,7 @@
                                             <constraint firstAttribute="trailing" secondItem="2P2-hy-189" secondAttribute="trailing" constant="23" id="f8o-bb-qTJ"/>
                                             <constraint firstItem="kgk-1r-Wss" firstAttribute="top" secondItem="Tus-OC-HJK" secondAttribute="top" constant="8" id="ita-n4-YRc"/>
                                             <constraint firstItem="h8m-pw-DNt" firstAttribute="top" secondItem="kgk-1r-Wss" secondAttribute="bottom" constant="18" id="pgE-zz-vWX"/>
+                                            <constraint firstItem="CBV-IZ-d4M" firstAttribute="top" secondItem="Ziv-Ar-lI9" secondAttribute="bottom" constant="138" id="sxY-b0-scZ"/>
                                             <constraint firstAttribute="trailing" secondItem="h8m-pw-DNt" secondAttribute="trailing" constant="23" id="uJu-bA-RtS"/>
                                         </constraints>
                                         <variation key="default">
