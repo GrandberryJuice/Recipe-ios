@@ -20,6 +20,7 @@ class RecipeCell: UITableViewCell {
     func configureCell(recipe:Recipe) {
         recipeTitle.text = recipe.title
         recipeImg.image = recipe.getRecipeImage()
+        //print(recipe.ingredients)
     }
 
 
